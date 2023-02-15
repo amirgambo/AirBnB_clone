@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-""" module for State class """
+'''This module creates a User class'''
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """
-    initiation of State that inherits from BaseModel class
-
-    Public Class Attributes:
-       (string) name: initialized as empty string
-    """
+    '''Class for managing state objects'''
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        '''Initializes attributes for the State class'''
+        super().__init__(*args, **kwargs)

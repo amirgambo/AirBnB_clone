@@ -1511,6 +1511,7 @@ class TestHBNBCommand_count(unittest.TestCase):
         except IOError:
             pass
         FileStorage._FileStorage__objects = {}
+
     @classmethod
     def tearDown(self):
         try:

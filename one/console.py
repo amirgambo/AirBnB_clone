@@ -224,6 +224,7 @@ Function: Updates the instance of the class
                 args_checks = re.search(r"^\"([^\"]*)\"(?:, (.*))?$", args)
                 # print(args_checks.group(1), args_checks.group(2))
                 instance_id = args_checks[1]
+
                 if args_checks.group(2) is None:
                     line = f"{command} {class_name} {instance_id}"
                 else:
